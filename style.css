@@ -1,0 +1,90 @@
+/* 1. 全域重設 */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. 整體網頁：背景淺灰，文字深灰 */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: #333333;
+    background-color: #f4f6f9;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+}
+
+/* 3. 頂部藍色標題區（只有這裡是藍色） */
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 30px 20px 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* 4. 導覽列 */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 6px;
+    padding: 6px 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3d566e;
+}
+
+/* 5. 主要內容區塊（白色卡片） */
+section {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    padding-bottom: 8px;
+    color: #2c3e50;
+    border-bottom: 3px solid #842B00;
+    display: inline-block;
+}
+
+section p {
+    margin-bottom: 0;
+}
+
+/* 6. 頁尾 */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    font-size: 14px;
+}
+
+/* 7. 手機版微調 */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    section {
+        margin: 15px 12px;
+        padding: 20px;
+    }
+}
